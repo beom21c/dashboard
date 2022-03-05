@@ -25,6 +25,7 @@ import {
 } from "@ant-design/icons";
 import {Input} from "antd";
 import Contents from "../component/Contents";
+import LeftMenu from "../component/LeftMenu";
 
 export default function Dashboard() {
 
@@ -100,15 +101,11 @@ export default function Dashboard() {
                 <LeftOutlined/>
                 <RightOutlined />
                 server1 <CaretRightOutlined /> Reports <CaretRightOutlined /> Production Reports <CaretRightOutlined /> Trend Log Comparison
-
-
                 <FilterOutlined style={{float : 'right', fontSize : 22}} />
             </div>
 
-
-
-
             <div>
+                <LeftMenu/>
                 <Contents/>
             </div>
         </>
